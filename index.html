@@ -1074,6 +1074,93 @@
 
     .annoy-btn-yes { background: #00ff00; color: black; }
     .annoy-btn-no { background: #ff0000; color: white; }
+
+    /* ENCERRAMENTO E CONTATOS */
+    .site-footer {
+      margin-top: 3rem;
+      padding: 1rem 2rem 1.5rem;
+    }
+
+    .academic-note {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.55rem;
+      margin: 0 0 1.35rem;
+      color: var(--accent-champagne);
+      font-family: var(--font-sans);
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      line-height: 1.5;
+      text-align: center;
+    }
+
+    .academic-note-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex: 0 0 auto;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: var(--accent-champagne);
+      color: var(--bg-main);
+      font-size: 0.62rem;
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: 0;
+    }
+
+    .social-links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1.2rem;
+    }
+
+    .social-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 42px;
+      height: 42px;
+      transition: transform 0.25s ease, opacity 0.25s ease;
+    }
+
+    .social-link:hover,
+    .social-link:focus-visible {
+      transform: translateY(-3px) scale(1.08);
+      opacity: 0.72;
+      outline: none;
+    }
+
+    .social-link img {
+      width: 36px;
+      height: 36px;
+      object-fit: contain;
+    }
+
+    .footer-divider {
+      display: block;
+      width: min(100%, 380px);
+      height: 40px;
+      margin: 0.25rem auto 0;
+      object-fit: cover;
+      object-position: center;
+      opacity: 0.78;
+    }
+
+    @media (max-width: 720px) {
+      .site-footer {
+        padding: 1rem 1.25rem 1.5rem;
+      }
+
+      .academic-note {
+        font-size: 0.65rem;
+      }
+    }
   </style>
 </head>
 <body>
@@ -2184,6 +2271,25 @@
       </div>
     </section>
   </main>
+
+  <footer class="site-footer">
+    <p class="academic-note"><span class="academic-note-icon" aria-hidden="true">i</span><span>Nota Acadêmica: Este site é uma demonstração simbólica desenvolvida exclusivamente para fins didáticos na disciplina de Desenvolvimento de Sistemas.</span></p>
+    <nav class="social-links" aria-label="Redes sociais e contato">
+      <a class="social-link" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=stefanymsc64@gmail.com&amp;su=Contato&amp;body=Ol%C3%A1%20Stefany%2C%20como%20est%C3%A1%3F%0A%0AEstou%20entrando%20em%20contato%20atrav%C3%A9s%20do%20site%20da%20No%20UX%20e%20UI%2C%20que%20inclusive%2C%20achei%20muito%20interessante%20e%20gostaria%20de%20saber%20mais%20detalhes%20sobre%20seus%20projetos%21%0A%0AAguardo%20seu%20retorno.%0A%0AAtenciosamente%3B" target="_blank" rel="noopener noreferrer" aria-label="Enviar e-mail para Stefany">
+        <img src="icones/gmail.png" alt="Gmail">
+      </a>
+      <a class="social-link" href="https://www.instagram.com/stefany.mazzei/" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Stefany">
+        <img src="icones/instagram.png" alt="Instagram">
+      </a>
+      <a class="social-link" href="https://www.facebook.com/stefany.cocuzzo.3/" target="_blank" rel="noopener noreferrer" aria-label="Facebook de Stefany">
+        <img src="icones/facebook.png" alt="Facebook">
+      </a>
+      <a class="social-link" href="https://wa.me/5511974866465?text=Ol%C3%A1%20_*Stefany*_%21%20Tudo%20bem%3F%20Estou%20entrando%20em%20contato%20com%20voc%C3%AA%20atrav%C3%A9s%20do%20site%20No%20UX%20e%20UI%2C%20gostaria%20de%20saber%20mais%20sobre%20seus%20projetos%20e%20trabalhos." target="_blank" rel="noopener noreferrer" aria-label="Enviar mensagem para Stefany pelo WhatsApp">
+        <img src="icones/whatsapp.png" alt="WhatsApp">
+      </a>
+    </nav>
+    <img class="footer-divider" src="icones/imagem.png" alt="">
+  </footer>
 
   <!-- MODAL DE IRRITAÇÃO (5 ETAPAS) -->
   <div class="annoy-modal-overlay" id="annoyModal">
